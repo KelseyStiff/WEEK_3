@@ -1,0 +1,21 @@
+h1 {
+text-align: center;
+}
+
+.missile-link {
+display: block;
+padding: 50px;
+margin: 100px;
+color: white;
+text-align: center;=
+}
+
+#real-alert {
+display:center;
+background-color: red;
+}
+
+#test-only {
+display: center;
+background-color: green;
+}

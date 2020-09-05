@@ -1,0 +1,39 @@
+/*STYLESHEET FOR FAVORITE-PROGRAM PAGE BY KELSEY STIFF*/
+
+.jumbotron{
+    background-image: url("images/garden.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #a9e3a8 ;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px white;
+}
+
+body{
+    background-color: #d1e6d1
+}
+
+.btn-primary{
+    margin: 25px;
+    background-color: seagreen;
+}
+
+pre{
+    color: white;
+    background-color: #6e996e;
+}
+
+#special{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    color: seagreen;
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+    color: seagreen;
+    text-shadow:2px 2px 5px lightgreen;
+}
+
+

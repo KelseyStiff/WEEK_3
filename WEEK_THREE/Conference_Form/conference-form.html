@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conference Registration Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="conference-form-stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Viga&display=swap" rel="stylesheet">
+</head>
+
+<body class="m-3">
+
+<div class="jumbotron">
+    <h1 align="center">CONFERENCE REGISTRATION FORM</h1>
+</div>
+
+<div class="row">
+        <div class="col-md-12">
+            <p align="center">please fill out information below to register for The Conference</p>
+            <form class="mx-5">
+                <label class="text" for="name">NAME</label>
+                <input class="form-control" id="name" type="text" max-length="70" required><br>
+
+
+                <label class="text" for="password">Password</label>
+                <input class="form-control" id="password" type="password" required><br>
+
+                <label class="text" for="email">Email</label>
+                <input class="form-control" name="email" id="email" type="email" required><br>
+
+                <div class="form-group">
+                    <label for="tshirt-size">T-shirt Size</label>
+                    <select class="form-control" id="tshirt-size" required>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="DOB">Date of Birth</label>
+                    <input class="form-control" name="dob" id="DOB" type="date" required>
+                </div>
+
+                <p class="form-text">Would you like to receive emails from our conference
+                sponsors?</p>
+                <div class="form-check">
+                    <input  name="email-list" id="yes" type="radio" class="form-check-input" required>
+                    <label for="yes" class="form-check-label">YES, I would like to be on the email list.</label>
+                    <br>
+                    <input  name="email-list" id="no" type="radio" class="form-check-input" required>
+                    <label for="no" class="form-check-label">NO, Thank you.</label>
+                </div>
+                <br>
+                <p class="form-text">Which conference times will you be attending?</p>
+                <div class="form-check">
+                    <input name="attending-session" id="morning" type="checkbox" class="form-check-input">
+                    <label for="morning" class="form-control-label">Morning</label>
+                    <br>
+                    <input name="attending-session" id="night" type="checkbox" class="form-check-input">
+                    <label for="night" class="form-control-label">Afternoon</label>
+                </div>
+                <br>
+                <label class="text" for="special-requests">Special Requests</label> <br>
+                <textarea class="form-control" id="special-requests" name="special-requests" rows="7" cols="70"></textarea> <br>
+
+                <div>
+                    <input class="btn btn-primary mt-2" type="submit" name="submit-btn">
+                </div>
+            </form>
+        </div>
+        </div>
+
+
+</body>
+</html>

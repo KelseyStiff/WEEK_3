@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favorite Program: Garden Planner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Favorite-Program-Styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Mukta|Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body class="m-3">
+    <div class="jumbotron">
+    <h1 align="center">Garden Planner</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-5">
+            <div class="mx-5">
+                <p id="special">
+                    With this program you can plan your garden before you plant it!
+                </p>
+                <p>
+                <h5>HOW IT WORKS:</h5>
+                    1) start by selecting "New Garden" which will take you to the create screen
+                    <br>
+                    2) once on create screen you can name your garden at the top
+                    <br>
+                    3) use the sliders on the create screen to choose the height and width of your garden
+                    <br>
+                    4) select the plant from the list on left, then select the cell on the garden plot table to populate it with
+                    the selected plant
+                    <br>
+                    5)when finished, hit export button bottom right to save your garden plan to an image file for later viewing!
+                </p>
+            </div>
+
+            <div>
+                <pre><code>
+ public static BufferedImage createImageOfGardenPlot(JTable gardenPlot) {
+ JTableHeader tableHeader = gardenPlot.getTableHeader();
+ int totalWidth = tableHeader.getWidth() + gardenPlot.getWidth(); //gets width of table assigns it to int variable
+ int totalHeight = tableHeader.getHeight() + gardenPlot.getHeight(); //gets height of table assigns it to int variable
+ BufferedImage gardenPlotImage = new BufferedImage(totalWidth, totalHeight,
+ BufferedImage.TYPE_INT_RGB);
+ Graphics2D g2D = (Graphics2D) gardenPlotImage.getGraphics();
+ tableHeader.paint(g2D);
+ g2D.translate(0, tableHeader.getHeight());
+ gardenPlot.paint(g2D);
+ return gardenPlotImage;
+        }
+                </code></pre>
+            </div>
+
+        </div>
+
+
+        <div class="col-md-7">
+            <div class="mx-5">
+
+            <img width="800" src="images/programScreenshot.PNG" class="img-fluid" id="screenshot" alt="Screenshot of Program">
+
+            <a class="btn btn-primary" href="https://github.com/Jv4724eu/JavaGardenProject" role="button">DOWNLOAD GARDEN PLANNER HERE</a>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.jumbotron{
+    font-family: 'Monoton', cursive;
+    background-color:#398e91;
+    color: white ;
+}
+
+body {
+    /* fallback color */
+    background-color: #66cccc;
+    /* Firefox 3.6+ */
+    background-image: -moz-linear-gradient(#68a6a8,
+    #66cccc);
+    /* Safari 4+, Chrome 1+ */
+    background-image: -webkit-gradient(linear, 0% 0%,
+    0% 100%, from(#66cccc), to(#68a6a8));
+    /* Safari 5.1+, Chrome 10+ */
+    background-image: -webkit-linear-gradient(#68a6a8,
+    #daf1f2);
+    /* Opera 11.10+ */
+    background-image: -o-linear-gradient(#68a6a8,
+    #daf1f2);
+    background-repeat: round;
+}
+
+.btn-primary{
+    background-color: royalblue;
+    border: royalblue;
+}
+
+.row {
+    font-family: 'Viga', sans-serif;
+}
+
+
